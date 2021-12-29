@@ -13,12 +13,13 @@ type Shape = Square | Rectangle;
 
 function calculateArea(shape: Shape) {
   if (shape instanceof Rectangle) {
-    shape;
+    console.log(shape);
     return shape.width * shape.height;
   } else {
-    shape;
+    console.log(shape);
     return shape.width * shape.width;
   }
 }
 
-h
+const item = new Rectangle(10, 20);
+calculateArea(item);
